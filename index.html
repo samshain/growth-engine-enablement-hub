@@ -1,137 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth Engine Resource Hub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-50 font-sans text-slate-800">
+import React from 'react';
 
-    <!-- Top Navigation Header -->
-    <nav class="bg-white shadow-sm px-8 py-4 flex justify-between items-center border-b border-slate-200">
-        <div class="text-xl font-bold text-blue-700 tracking-tight">Growth Engine</div>
-        <div class="flex space-x-6 text-sm font-medium text-slate-600">
-            <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">Home</a>
-            <a href="#" class="hover:text-blue-600">Playbook</a>
-            <a href="#" class="hover:text-blue-600">Rollout</a>
-            <a href="#" class="hover:text-blue-600">Success Stories</a>
-            <a href="#" class="hover:text-blue-600">Contact</a>
+const EnablementHub = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+      {/* Top Navigation / Header */}
+      <header className="bg-blue-900 text-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">Enablement Resource Hub</h1>
+            <p className="text-sm text-blue-200 mt-1">Growth Engine | GTM Workstream 5</p>
+          </div>
+          <div className="text-right hidden md:block">
+            <span className="text-xs font-semibold uppercase tracking-wider text-blue-300">
+              Digital Impact Office
+            </span>
+          </div>
         </div>
-        <div class="relative">
-            <input type="text" placeholder="🔍 Search Hub..." class="bg-slate-100 text-sm rounded-full px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        </div>
-    </nav>
+      </header>
 
-    <!-- Hero Section -->
-    <header class="text-center py-16 px-4 bg-gradient-to-b from-blue-50 to-slate-50">
-        <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Turn compliance into a competitive edge</h1>
-        <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">Your single source of truth for Growth Engine enablement, strategy, and market intelligence.</p>
-        <div class="inline-flex items-center bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full border border-blue-200 shadow-sm">
-            🎯 Digital Impact Office Alignment: Supporting overarching strategy and equipping the FLEX leadership development rotational program.
-        </div>
-    </header>
-
-    <!-- Core Resources & Quick Links -->
-    <section class="max-w-7xl mx-auto px-8 mb-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+      {/* Main Content Area */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h3 class="font-bold text-lg mb-4 border-b pb-2">📖 Playbook</h3>
-            <ul class="space-y-3 text-sm">
-                <li>
-                    <a href="#" class="font-semibold text-blue-600 hover:underline">Messaging Deck</a>
-                    <div class="flex items-center text-xs text-slate-500 mt-1">
-                        <span class="text-green-600 font-bold mr-1">✓ Verified</span> | Last Updated: 07/22
-                    </div>
-                </li>
-                <li><a href="#" class="hover:text-blue-600">Core narrative & talk track</a></li>
-            </ul>
+        {/* Welcome & Context Section */}
+        <div className="bg-white rounded-lg shadow-sm p-8 mb-8 border border-gray-200">
+          <h2 className="text-xl font-semibold mb-2">Welcome to the GTM Workstream 5 Hub</h2>
+          <p className="text-gray-600">
+            Access the latest go-to-market strategies, operational playbooks, and training materials designed to accelerate the Growth Engine.
+          </p>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h3 class="font-bold text-lg mb-4 border-b pb-2">🚀 Rollout</h3>
-            <ul class="space-y-3 text-sm">
-                <li><a href="#" class="hover:text-blue-600">Phase 1 Guide</a></li>
-                <li><a href="#" class="hover:text-blue-600">Rollout framework</a></li>
-            </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h3 class="font-bold text-lg mb-4 border-b pb-2">🌟 Success Stories</h3>
-            <ul class="space-y-3 text-sm">
-                <li><a href="#" class="hover:text-blue-600">Active Countries</a></li>
-                <li><a href="#" class="hover:text-blue-600">South Africa Story</a></li>
-                <li><a href="#" class="hover:text-blue-600">Case study</a></li>
-            </ul>
-        </div>
-
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h3 class="font-bold text-lg mb-4 border-b pb-2">💬 Contact SMEs</h3>
-            <p class="text-sm text-slate-600 mb-4">Embedded help desk form connects you directly to Growth Engine subject matter experts.</p>
-            <a href="#" class="block text-center bg-blue-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition">✉️ Open Help Desk</a>
-        </div>
-    </section>
-
-    <!-- ROI Impact Areas -->
-    <section class="max-w-7xl mx-auto px-8 mb-12">
-        <div class="bg-slate-900 text-white rounded-xl shadow-md p-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
-            <div class="px-4">
-                <div class="text-3xl mb-2">🌍</div>
-                <h4 class="font-bold text-lg mb-2">Market Access</h4>
-                <p class="text-sm text-slate-300">Unlock restricted markets through offset compliance</p>
+        {/* Dashboard Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          {/* Card 1 */}
+          <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition-shadow">
+            <div className="h-10 w-10 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
             </div>
-            <div class="px-4 pt-6 md:pt-0">
-                <div class="text-3xl mb-2">💰</div>
-                <h4 class="font-bold text-lg mb-2">Margin Impact</h4>
-                <p class="text-sm text-slate-300">Reduce penalty exposure & optimize cost structures</p>
-            </div>
-            <div class="px-4 pt-6 md:pt-0">
-                <div class="text-3xl mb-2">🛡️</div>
-                <h4 class="font-bold text-lg mb-2">Risk Mitigation</h4>
-                <p class="text-sm text-slate-300">Proactive compliance reduces debarment risk</p>
-            </div>
-        </div>
-    </section>
+            <h3 className="text-lg font-medium mb-2">GTM Playbooks</h3>
+            <p className="text-sm text-gray-500 mb-4">Core strategies and execution frameworks for Workstream 5.</p>
+            <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800">View Playbooks &rarr;</a>
+          </div>
 
-    <!-- Dynamic Content -->
-    <section class="max-w-7xl mx-auto px-8 mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-            <h3 class="font-bold text-xl mb-4">📰 Latest News</h3>
-            <div class="space-y-4">
-                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
-                    <span class="text-xs font-bold bg-blue-100 text-blue-800 px-2 py-1 rounded mb-2 inline-block">NEW</span>
-                    <h4 class="font-bold">AI Workforce Consortium</h4>
-                    <p class="text-sm text-slate-600">Partnership announcement expanding offset options</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500">
-                    <span class="text-xs font-bold bg-yellow-100 text-yellow-800 px-2 py-1 rounded mb-2 inline-block">FEATURED</span>
-                    <h4 class="font-bold">Project 525</h4>
-                    <p class="text-sm text-slate-600">Strategic Initiative milestone reached</p>
-                </div>
+          {/* Card 2 */}
+          <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition-shadow">
+            <div className="h-10 w-10 bg-green-100 text-green-700 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
             </div>
-        </div>
+            <h3 className="text-lg font-medium mb-2">Growth Engine Metrics</h3>
+            <p className="text-sm text-gray-500 mb-4">Real-time dashboards and KPI tracking for our primary initiatives.</p>
+            <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800">Access Dashboards &rarr;</a>
+          </div>
 
-        <div>
-            <h3 class="font-bold text-xl mb-4">📍 Global Footprint</h3>
-            <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 h-full">
-                <div class="mb-6">
-                    <h4 class="font-bold text-green-600 mb-2">Live Markets:</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-                        <li>South Africa</li>
-                        <li>Canada</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold text-orange-500 mb-2">In-Setup:</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
-                        <li>Saudi Arabia</li>
-                        <li>UAE</li>
-                        <li>Qatar</li>
-                    </ul>
-                </div>
+          {/* Card 3 */}
+          <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition-shadow">
+            <div className="h-10 w-10 bg-purple-100 text-purple-700 rounded-lg flex items-center justify-center mb-4">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
             </div>
-        </div>
-    </section>
+            <h3 className="text-lg font-medium mb-2">Leadership Handovers</h3>
+            <p className="text-sm text-gray-500 mb-4">Finalized project repositories and presentation deliverables.</p>
+            <a href="#" className="text-blue-600 text-sm font-semibold hover:text-blue-800">View Materials &rarr;</a>
+          </div>
 
-</body>
-</html>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default EnablementHub;
